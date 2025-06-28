@@ -84,10 +84,7 @@ export function GalleryProvider({ children }) {
     }
   };
 
-  console.log("환경변수 확인:", {
-    url: import.meta.env.VITE_REACT_APP_SUPABASE_URL,
-    key: import.meta.env.VITE_REACT_APP_SUPABASE_ANON_KEY
-  });
+
 
   return (
     <GalleryContext.Provider value={{ websites, loading, error, addWebsite, removeWebsite }}>
